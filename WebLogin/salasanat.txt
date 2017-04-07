@@ -1,3 +1,6 @@
 pekka;akkep
 jukka;akkuj
 test;test
+test1;test1
+pentti;ittnep
+paavo;ovaap
