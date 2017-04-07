@@ -6,11 +6,13 @@ import org.junit.rules.ExternalResource;
 import spark.Spark;
 
 public class ServerRule extends ExternalResource {
-    
+
     private final int port;
 
     public ServerRule(int port) {
         this.port = port;
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\juuso_j0pbwen\\OneDrive\\Asiakirjat\\Opiskelu\\Harjoitukset\\Ohjelmointituotanto\\chromedriver.exe");
+
     }
 
     @Override
@@ -26,5 +28,5 @@ public class ServerRule extends ExternalResource {
     protected void after() {
         Spark.stop();
     }
-    
+
 }
